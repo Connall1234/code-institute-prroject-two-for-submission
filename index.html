@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Our head  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Play rock paper scissors lizard Spock online! Exciting game, play the computer, win game.">
+    <title>Rock, paper, scissors, lizzard, spock game!</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<!-- Our body  -->
+
+<body>
+    <!-- Game title  -->
+    <div id="title">Rock, paper, scissors, lizard, spock!</div>
+    <!-- Name picker -->
+    <div id="pickname_container">
+        <div id="nameBox">
+            <label for="playerNameInput" id="enter_name">Please enter your name (only three letters):</label>
+            <input type="text" id="playerNameInput" maxlength="3">
+            <button id="submitName">Submit</button>
+            <p id="errorMessage" style="color: white; display: none">
+                Please enter a valid name with exactly three letters.
+            </p>
+        </div>
+    </div>
+
+    <!-- Score counter -->
+    <div class="score_counter_container" id="score_counter_cont_id">
+        <div class="score_counter" id="your_score">
+            score: 0
+            <p></p>
+        </div>
+        <div></div>
+        <div class="score_counter" id="comps_score">
+            Computer score: 0
+            <p></p>
+        </div>
+    </div>
+    <!-- Game board container -->
+    <div class="game_board_container" id="game_board_cont_id">
+        <!-- The main hand the player will play -->
+        <div class="main_hand_player" id="main_hand_player_id">
+            <!-- Div for image for player -->
+            <div class="hand_img" id="player_hand_img_id">❓</div>
+            <!-- Div for options -->
+            <div class="choice_container" id="choice_container_id">
+                <button class="player_hand_choice" id="player_rock" data-selection="rock">
+                    ✊
+                </button>
+                <button class="player_hand_choice" id="player_paper" data-selection="paper">
+                    ✋
+                </button>
+                <button class="player_hand_choice" id="player_scissor" data-selection="scissor">
+                    ✌️
+                </button>
+                <button class="player_hand_choice" id="player_lizard" data-selection="lizard">
+                    🦎
+                </button>
+                <button class="player_hand_choice" id="player_spock" data-selection="spock">
+                    🖖
+                </button>
+            </div>
+        </div>
+        <!-- The main hand the comp will play -->
+        <div class="main_hand_comp" id="main_hand_player_comp">
+            <!-- Div for image for computer -->
+            <div class="hand_img" id="comp_hand_img_id">❓</div>
+            <!-- Div for options, we keep these as they cause layout issues if removed  -->
+            <div class="choice_container">
+                <div class="comp_hand_choice" id="comp_rock"></div>
+                <div class="comp_hand_choice" id="comp_paper"></div>
+                <div class="comp_hand_choice" id="comp_scissor"></div>
+                <div class="comp_hand_choice" id="comp_lizard"></div>
+                <div class="comp_hand_choice" id="comp_spock"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Keeps player updated on what is happening -->
+    <div id="updating_player">
+        <p>Pick a hand</p>
+    </div>
+    <!-- The reset button -->
+    <span id="reset_button_container">
+        <button id="reset">Reset</button>
+    </span>
+    <div></div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

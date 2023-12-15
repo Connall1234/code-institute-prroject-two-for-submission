@@ -1,0 +1,323 @@
+/* This is to import our fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Our body */
+body {
+    margin: 0;
+    background: black;
+}
+
+/* Our styles for the pick name box */
+#nameBox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+    width: 90%;
+    border-radius: 15px;
+    background: linear-gradient(to right, red, blue);
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 16px;
+    height: 90%;
+    color: white;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Our style for the name imput */
+#playerNameInput {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Our style for the enter name box */
+#enter_name {
+    padding: 20px
+}
+
+/* Our style for the submit button, which adds transition */
+#submitName {
+    width: 33%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+/* Further styles for hover effect on submit button */
+#submitName:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Our style for the game heading */
+#title {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+/* Our style for score counter container */
+#score_counter_cont_id {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* Our style for the score counter */
+.score_counter {
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Our style for the game board container */
+#game_board_cont_id {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3px;
+}
+
+/* Our style for player main emoji */
+#main_hand_player_id {
+    padding: 5px;
+    margin: 5px;
+    height: 180px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Our style for the computer main emoji */
+#player_hand_img_id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100px;
+}
+
+/* Our style for the choice containers */
+.choice_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Our style for the players choice, includes scale up effect */
+.player_hand_choice {
+    width: 8vw;
+    height: 8vw;
+    background-color: transparent;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    transform: scale(1);
+}
+
+/* Further styles for the choice hover effect */
+.player_hand_choice:hover {
+    transform: scale(1.9);
+}
+
+/* Flex styles for the player side of the board */
+#main_hand_player_comp {
+    padding: 5px;
+    margin: 5px;
+    height: 180px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex styles for the computer side of the board */
+#comp_hand_img_id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100px;
+}
+
+/* Styles for the computer choices */
+.comp_hand_choice {
+    width: 8vw;
+    height: 8vw;
+    background-color: transparent;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the player update section */
+#updating_player {
+    text-align: center;
+    align-self: center;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 6px;
+}
+
+/* Styles for the reset button container */
+#reset_button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the reset button */
+#reset {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 35%;
+    border-radius: 15px;
+    background: linear-gradient(to right, red, pink);
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 8px;
+    height: 2%;
+    color: white;
+
+}
+
+/* Our media screen queries, the first one is for phone screens */
+@media screen and (min-width: 500px) {
+
+    /* Further styles so the emojis can scale when the screen width increases */
+    #player_hand_img_id {
+        font-size: 150px;
+    }
+
+    /* Further styles so the emojis can scale when the screen width increases */
+    #comp_hand_img_id {
+        font-size: 150px;
+    }
+
+    #main_hand_player_id {
+        width: 30%;
+        height: 240px;
+    }
+
+    /* Further styles so the player hand can scale when the screen width increases */
+    #main_hand_player_comp {
+        width: 30%;
+        height: 240px;
+    }
+
+    /* Further styles so the choice emojis can scale when the screen width increases */
+    .player_hand_choice {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    /* Further styles so the computer's choice emojis can scale when the screen width increases */
+    .comp_hand_choice {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    /* Further styles so the title can scale when the screen width increases */
+    #title {
+        font-size: 24px
+    }
+
+    /* Further styles so the update player section can scale when the screen width increases */
+    #updating_player {
+        font-size: 24px;
+    }
+
+    /* Further styles so the reset button can scale when the screen width increases */
+    #reset {
+        width: 20%;
+        height: 2%;
+        font-size: 24px;
+        font-family: 'Press Start 2P', sans-serif;
+
+    }
+}
+
+/*Our media queries for tablets and higher  */
+@media screen and (min-width: 800px) {
+
+    /* Further styles so the player emoji can scale when the screen width increases */
+    #player_hand_img_id {
+        font-size: 170px;
+    }
+
+    /* Further styles so the computer emoji can scale when the screen width increases */
+    #comp_hand_img_id {
+        font-size: 170px;
+    }
+
+    #main_hand_player_id {
+        width: 30%;
+        height: 340px;
+    }
+
+    #main_hand_player_comp {
+        width: 30%;
+        height: 340px;
+    }
+
+    .player_hand_choice {
+        font-size: 35px;
+    }
+
+    .comp_hand_choice {
+        font-size: 35px;
+    }
+
+    /* Further styles so the name box can scale when the screen width increases */
+    #nameBox {
+        width: 40%;
+    }
+
+    /* Further styles so the submit button can scale when the screen width increases */
+    #submitName {
+        width: 30%;
+    }
+
+}
