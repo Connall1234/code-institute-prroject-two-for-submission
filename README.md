@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors, Lizard, Spock Game
 
-Link to the site! [Pblished site](https://www.youtube.com/).
+Link to the site! [Published site](https://connall1234.github.io/code-institute-prroject-two-for-submission/).
 
 ## Introduction
 
@@ -46,7 +46,7 @@ This element updates the player, providing direction and keeping them informed a
 
 The reset button allows players to reset the score without reloading the page.
 
-## User Experience (UX)
+## User Experience Goals and Testing These Goals (UX)
 
 ### User Stories
 
@@ -61,18 +61,16 @@ The reset button allows players to reset the score without reloading the page.
     - When the visitor joins the page they can see all the relevant parts to the page, and can navigate their way through, also, if they do not know what to do the update bar will give them guidance.
 
 - **Returning Visitor Goals**
-  - As a returning visitor, I want to play the game without any need to figure out how the game works or what to interact with.
+  - As a returning visitor, I want to play the game without any need to figure out how the game works or what to interact with, and I want the game to be quck and responsive.
     - Quick response times and fast interaction from inputs give this element to the game.
     - Making sure there is no lag between the player input and the expected output makes the game satisfying to play.
   - As a returning visitor, I want to play the game on multiple different devices.
     - The website was viewed on a variety of devices, like desktop, laptop, tablet, and multiple phones.
     - A lot of testing was done to ensure that all functions work properly.
-    - My family and friends were asked to review the project and make note of any bugs they found.
 
 - **Frequent User Goals**
-  - As a frequent user, I want to have the game feel responsive when I play it.
-    - Quick response times and fast interaction from inputs give this element to the game.
-    - Making sure there is no lag between the player input and the expected output makes the game satisfying to play.
+  - As a frequent user, I want the game to display fairness.
+    - As the code generated is always a random selection, we can always allow fairness in the game.
   - As a frequent user, I want to use the reset feature to reset the scores.
     - The reset button placed where the player can easily see it will accomplish this.
     - Clear guidance on the page along with the reset button gives all elements their purpose.
@@ -82,7 +80,7 @@ The reset button allows players to reset the score without reloading the page.
 - **Colour Scheme**
   - The colours used were black and white, for a simple contrast, and also red for the reset button to give the arcade theme.
 - **Typography**
-  - The font is 'Press Start 2P', sans-serif; this is to keep with the arcade feel, and I have sans-serif as the backup.
+  - The font is Press Start 2P, sans-serif, this is to keep with the arcade feel, and I have sans-serif as the backup.
 - **Imagery**
   - There is no need for imagery in this game, as we use emojis to represent our handpicks.
 
@@ -110,6 +108,9 @@ The reset button allows players to reset the score without reloading the page.
   - The website was tested across Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers.
   - It was also viewed on various devices like Desktop, Laptop, iPhone7, iPhone 8, and iPhoneX.
   - Extensive testing ensured proper linking and responsiveness.
+  - A lot of testing was done to ensure that all functions work properly.
+  - My family and friends were asked to review the project and make note of any bugs they found.
+
 
 - **Lighthouse**
   - ![Lighthouse Screenshot](assets/images/lighthousescsht.png)
@@ -121,22 +122,22 @@ The reset button allows players to reset the score without reloading the page.
 
 The project was deployed to GitHub Pages using the following steps:
 
-1. Log in to GitHub and access the [GitHub Repository](https://www.youtube.com/).
+1. Log in to GitHub and access the [GitHub Repository](https://github.com/Connall1234/code-institute-prroject-two-for-submission).
 2. Go to Settings > GitHub Pages > Source > Select "Master Branch."
-3. The published site can be accessed [here](https://www.youtube.com/).
+3. The published site can be accessed [here](https://connall1234.github.io/code-institute-prroject-two-for-submission/).
 
 ### Forking the GitHub Repository
 
 Forking the repository creates a copy on your GitHub account for viewing and/or making changes without affecting the original repository. Follow these steps:
 
-1. Access the [GitHub Repository](https://www.youtube.com/).
+1. Access the [GitHub Repository](https://github.com/Connall1234/code-institute-prroject-two-for-submission).
 2. Click "Fork" at the top right of the repository.
 
 ### Making a Local Clone
 
 To clone the repository locally, follow these steps:
 
-1. Access the [GitHub Repository](https://www.youtube.com/).
+1. Access the [GitHub Repository](https://github.com/Connall1234/code-institute-prroject-two-for-submission).
 2. Click "Clone or download" and copy the URL under "Clone with HTTPS."
 3. Open Git Bash and navigate to the desired directory.
 4. Enter `git clone` followed by the copied URL.
