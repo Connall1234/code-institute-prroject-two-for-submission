@@ -2,6 +2,12 @@
 /* jshint esversion: 6 */
 //This is to fix a varibale warning in jshint 
 let playerName = "";
+//Below is for the elements to be hidden when the game starts
+const gameBoard = document.getElementById('game_board_cont_id'); // Get the game board element
+const scoreCounter = document.getElementById('score_counter_cont_id'); // Get the score counter container
+const resetButtonContainer = document.getElementById('reset_button_container'); // Get reset button 
+const updatingPlayerD = document.getElementById('updating_player'); // Get update player 
+
 //This is our function to get the players name
 function getPlayerName() {
     const nameInput = document.getElementById('playerNameInput');
@@ -10,13 +16,20 @@ function getPlayerName() {
     const nameBox = document.getElementById('nameBox');
     const picknameContainer = document.getElementById('pickname_container');
 
+
     submitButton.addEventListener('click', function () {
         let name = nameInput.value.trim();
-
+        const regex = /^[a-zA-Z]+$/; // This will make sure the user only enters a-z
         if (name.length !== 3) {
             //This will not let the person enter more or less than three letters
             errorMessage.style.display = 'block';
-        } else {
+        }
+            //This will not let the person enter more or less than three letters
+
+        else if (!regex.test(name)) {
+            errorMessage.style.display = 'block';
+        }
+        else {
             playerName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
             let nameElement = document.getElementById('your_score');
             nameElement.textContent = playerName + "'s score: 0";
@@ -24,10 +37,15 @@ function getPlayerName() {
             errorMessage.style.display = 'none';
             // This will clear the nameBox
             nameInput.value = '';
-            // HThis will hide the nameBox
+            // This will hide the nameBox
             nameBox.style.display = 'none';
             // This will hide the whole box 
             picknameContainer.remove();
+            gameBoard.style.visibility = 'visible'; // Show the game board
+            scoreCounter.style.visibility = 'visible'; // Show the score counter container
+            resetButtonContainer.style.visibility = 'visible'; // Show the reset button container
+            updatingPlayerD.style.visibility = 'visible'; // Show the update player
+
         }
     });
 }
@@ -35,6 +53,10 @@ function getPlayerName() {
 // This will let us call the function when the page loads 
 window.onload = function () {
     getPlayerName();
+    gameBoard.style.visibility = 'hidden'; // Hide the game board
+    scoreCounter.style.visibility = 'hidden'; // Hide the score counter container
+    resetButtonContainer.style.visibility = 'hidden'; // Hide the reset button container
+    updatingPlayerD.style.visibility = 'hidden'; // Hide the update player
 };
 
 const choiceButtons = document.querySelectorAll('[data-selection]');

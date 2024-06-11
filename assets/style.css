@@ -189,7 +189,7 @@ body {
 }
 
 /* Styles for the player update section */
-#updating_player {
+#updating_player, #game_rules {
     text-align: center;
     align-self: center;
     font-family: 'Press Start 2P', sans-serif;
@@ -265,7 +265,7 @@ body {
     }
 
     /* Further styles so the update player section can scale when the screen width increases */
-    #updating_player {
+    #updating_player, #game_rules {
         font-size: 24px;
     }
 
@@ -320,4 +320,11 @@ body {
         width: 30%;
     }
 
+}
+
+/* Added this media query for submit button on small screens*/
+@media screen and (max-width: 320px) {
+    #submitName {
+        width: 45%
+    }
 }
